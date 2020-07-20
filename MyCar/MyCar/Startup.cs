@@ -10,7 +10,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using MyCar.Contexts;
-using MyCarWebApi.Services.Repositories;
+using MyCar.Services.Repositories;
 
 namespace MyCar
 {

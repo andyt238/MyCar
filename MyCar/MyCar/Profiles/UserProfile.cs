@@ -1,11 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using AutoMapper;
-namespace MyCar.Profiles
+﻿using AutoMapper;
+
+namespace BooksWebApi.Profiles
 {
-    public class UserProfile  : Profile
+    public class UserProfile : Profile
     {
+        public UserProfile()
+        {
+            CreateMap<MyCar.Entities.User, ExternalModels.UserDTO>();
+            CreateMap<ExternalModels.UserDTO, MyCar.Entities.User>();
+        }
     }
 }

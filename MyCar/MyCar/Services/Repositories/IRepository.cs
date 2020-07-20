@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq.Expressions;
 
-namespace MyCarWebApi.Services.Repositories
+namespace MyCar.Services.Repositories
 {
     public interface IRepository<TEntity> where TEntity : class
     {

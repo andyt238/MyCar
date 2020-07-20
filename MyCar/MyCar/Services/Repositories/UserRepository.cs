@@ -4,9 +4,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace MyCarWebApi.Services.Repositories
+namespace MyCar.Services.Repositories
 {
-    public class UserRepository : Repository<User>, IUserRepository
+    public class UserRepository : Repository<User>, UserRepository
     {
         private readonly CarContext _context;
 
