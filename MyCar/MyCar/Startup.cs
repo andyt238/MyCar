@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AutoMapper;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -21,10 +22,10 @@ namespace MyCar
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
-            var connectionString = Configuration["ConnectionStrings: CarsDbconnectionString"];
+            var connectionString = Configuration["ConnectionStrings: CarDbconnectionString"];
             services.AddDbContext<CarContext>(o => o.UseSqlServer(connectionString));
-            services.AddScoped<IUserRepository, UserRepository>();
-            services.AddScoped<IRepository, ProducatorRepository>();
+           // services.AddScoped<IUserRepository, UserRepository>();
+            //services.AddScoped<IRepository, ProducatorRepository>();
 
             services.AddControllers();
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());

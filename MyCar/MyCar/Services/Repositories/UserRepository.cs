@@ -3,7 +3,7 @@ using MyCar.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-
+/*
 namespace MyCar.Services.Repositories
 {
     public class UserRepository : Repository<User>, UserRepository
@@ -22,4 +22,4 @@ namespace MyCar.Services.Repositories
                 .ToList();
         }
     }
-}
+}*/

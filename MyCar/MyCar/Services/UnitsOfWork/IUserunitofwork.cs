@@ -10,5 +10,7 @@ namespace MyCar.Services.User_unit_of_work
         IUserunitofwork Users { get; }
 
         int Complete();
+        object Get(Guid id);
+        object Find(Func<object, bool> p);
     }
 }

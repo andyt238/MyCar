@@ -1,22 +1,21 @@
 ﻿using AutoMapper;
-using MyCar.Entities;
-using MyCar.ExternalModels;
-using MyCar.Services.UnitsOfWork;
+
+
+/*
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
-using MyCar.Services.User_unit_of_work;
 
-namespace MyCar.Controllers
+namespace BooksWebApi.Controllers
 {
     [Route("user")]
     [ApiController]
     public class UserController : ControllerBase
     {
-        private readonly IUserunitofwork _userUnit;
+        private readonly IUserUnitOfWork _userUnit;
         private readonly IMapper _mapper;
 
-        public UserController(IUserunitofwork userUnit,
+      public UserController(IUserUnitOfWork userUnit,
             IMapper mapper)
         {
             _userUnit = userUnit ?? throw new ArgumentNullException(nameof(userUnit));
@@ -65,4 +64,4 @@ namespace MyCar.Controllers
                 _mapper.Map<UserDTO>(userEntity));
         }
     }
-}
+}*/
