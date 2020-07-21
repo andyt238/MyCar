@@ -12,7 +12,7 @@ namespace MyCar.Entities
         public Guid Id {get;set;}
         [Required]
         [MaxLength(150)]
-        public string mileage { get; set; }
+        public string Km { get; set; }
 
     }
 }

@@ -10,15 +10,16 @@ namespace MyCar.Entities
     {
         [Key]
 
-        public Guid Id { get; set;  }
+        public Guid Id { get; set; }
 
         [Required]
         [MaxLength(150)]
-        public string Nume { get; set;  }
+        public string NumeProducator { get; set; }
 
         [Required]
         [MaxLength(150)]
-        public string Model { get; set;  }
-
+        public string Model { get; set; }
+        public bool? Deleted { get; set; }
     }
 }
+

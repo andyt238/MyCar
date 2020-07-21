@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace BooksWebApi.ExternalModels
+namespace MyCar.ExternalModels
 {
     public class ProducatorDTO
     {

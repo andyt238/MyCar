@@ -15,7 +15,7 @@ namespace MyCar.Contexts
         }
 
         public DbSet<User> Users { get; set; }
-        public DbSet<Accidente> Accidente { get; set; }
+        public DbSet<Producator> Producator { get; set; }
         public DbSet<Kilometri> Kilometri { get; set; }
 
 

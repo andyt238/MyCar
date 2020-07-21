@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 
-namespace BooksWebApi.Profiles
+namespace MyCar.Profiles
 {
     public class UserProfile : Profile
     {

@@ -11,7 +11,15 @@ namespace MyCar.Entities
         [Key]
         public Guid ID { get; set; }
         [MaxLength(150)]
-        public string VIN { get; set;  }
-        
+        public string FirstName { get; set;  }
+        [MaxLength(150)]
+        public string LastName { get; set; }
+        [MaxLength(150)]
+        public string Password { get; set; }
+        [MaxLength(150)]
+        public bool IsAdmin { get; set; }
+        [MaxLength(150)]
+        public bool? Deleted { get; set; }
+
     }
 }
